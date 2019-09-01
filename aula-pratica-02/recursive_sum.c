@@ -12,6 +12,6 @@ int main()
    int x;
    printf("Digite um numero: ");
    scanf("%d", &x);
-   printf("Soma dos %d primeiros numeros naturais: %d", x, soma(x));
-   return 1;
+   printf("Soma dos %d primeiros numeros naturais: %d\n", x, soma(x));
+   return 0;
 }
