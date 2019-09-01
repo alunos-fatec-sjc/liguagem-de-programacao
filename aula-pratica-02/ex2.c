@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int primo(int n);
 
-int primo(int n)
+bool is_prime(int n)
 {
     for (int i = 2; i < n; i ++) {
         if (n % i == 0) {
@@ -22,7 +22,7 @@ int main()
             cont++;
         }
     }
-    printf("Soma dos %d primeiro números primos: %d", n, soma);
+    printf("Soma dos %d primeiro nÃºmeros primos: %d", n, soma);
     return 1;
 }
 
