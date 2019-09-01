@@ -1,7 +1,4 @@
 #include<stdio.h>
-int ler();
-int mult(int a, int b);
-int imprimir(int a);
 
 int ler()
 {
@@ -20,7 +17,7 @@ int mult(int a, int b)
 
 int imprimir(int a)
 {
-    printf("Resultado: %d", a);
+    printf("Resultado: %d\n", a);
     return 1;
 }
 
