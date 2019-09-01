@@ -1,7 +1,4 @@
 #include<stdio.h>
-int find_menor(int *voltas, int n);
-int menor_volta(int *voltas,int menor, int n);
-int media(int *voltas, int n);
 
 int find_menor(int *voltas, int n) {
     int menor = voltas[0];
@@ -44,5 +41,5 @@ int main()
     printf("Melhor volta: %d\n", menor_volta(voltas, menor, n));
     printf("Media das voltas: %d", media(voltas, n));
 
-    return 1;
+    return 0;
 }
