@@ -6,7 +6,7 @@ int media(int *voltas, int n);
 int find_menor(int *voltas, int n) {
     int menor = voltas[0];
     int menor_volta = 0;
-    for(int i = 0; i < n; i++) {
+    for(int i = 1; i < n; i++) {
         if(voltas[i] < menor)
             menor = voltas[i];
             menor_volta = i + 1;
