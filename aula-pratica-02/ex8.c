@@ -1,20 +1,23 @@
 #include<stdio.h>
-int eh_par(int a);
+#include<stdbool.h>
 
-int eh_par(int a)
+bool eh_par(int a)
 {
-    if(a % 2 == 0)
-        return 1;
-    return 0;
+    if(a % 2 == 0) {
+        return true;
+    }
+    return false;
 }
 
 int main()
 {
     int x;
     scanf("%d", &x);
-    if(eh_par(x) == 1)
-        printf("%d eh par", x);
-    else
-        printf("%d eh impar", x);
-    return 1;
+    if(eh_par(x)) {
+        printf("%d eh par\n", x);
+    }
+    else {
+        printf("%d eh impar\n", x);
+    }
+    return 0;
 }
