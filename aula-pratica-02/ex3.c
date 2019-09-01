@@ -1,7 +1,7 @@
 #include<stdio.h>
 int n_divisores(int n);
 
-int n_divisores(int n)
+int counta_divisores(int n)
 {
     int cont = 0;
     for(int i = 1; i <= n; i++) {
