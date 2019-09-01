@@ -21,5 +21,5 @@ int main()
         }
         printf("%.1f ocorre %d vez(es)\n", vetor[i], cont);
     }
-    return 1;
+    return 0;
 }
