@@ -2,18 +2,16 @@
 
 int main()
 {
-    int vetor[8];
+    int vetor[8], index = 4;
     for(int i = 0; i < 8; i++){
         printf("Digite um numero: ");
-        scanf("%d", &vetor[i]);
-    }
-    int index = 4;
-    for(int i = 0; i < 8; i++) {
+        scanf("%d", &vetor[index++]);
         if(index > 7) {
             index = 0;
         }
-        printf("%d\n", vetor[index]);
-        index++;
+    }
+    for(int i = 0; i < 8; i++) {
+        printf("%d - ", vetor[i]);
     }
     return 0;
 }
