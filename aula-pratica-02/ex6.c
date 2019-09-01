@@ -1,5 +1,4 @@
 #include<stdio.h>
-int exp(int x, int z);
 
 int exp(int x, int z)
 {
@@ -18,5 +17,5 @@ int main()
     printf("Digite o expoente: ");
     scanf("%d", &b);
     printf("%d elevado a %d: %d", a, b, exp(a, b));
-    return 1;
+    return 0;
 }
