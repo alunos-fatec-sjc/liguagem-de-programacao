@@ -45,5 +45,4 @@ int main()
     printf("Media das voltas: %d", media(voltas, n));
 
     return 1;
-
 }
