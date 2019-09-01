@@ -17,5 +17,5 @@ int main()
     int n;
     scanf("%d", &n);
     primo(n);
-    return 1;
+    return 0;
 }
