@@ -15,6 +15,6 @@ int main()
     for(int i = 0; i < 10; i++)
         soma += (m[i] * n[i]);
 
-    printf("Produto escalar de m por n: %d", soma);
-    return 1;
+    printf("Produto escalar de m por n: %d\n", soma);
+    return 0;
 }
