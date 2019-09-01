@@ -1,16 +1,15 @@
 #include<stdio.h>
-#include<stdlib.h>
 int primo(int n);
 
 int primo(int n)
 {
     for (int i = 2; i < n; i ++) {
         if (n % i == 0) {
-            printf("%d não é número primo", n);
+            printf("%d nÃ£o Ã© nÃºmero primo", n);
             return 0;
         }
     }
-    printf("%d é um número primo", n);
+    printf("%d Ã© um nÃºmero primo", n);
     return 1;
 }
 
