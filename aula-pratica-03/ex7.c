@@ -5,7 +5,7 @@ int main()
     int a[5], b[8];
 
     for(int i = 0; i < 5; i++) {
-        printf("Digite um numero para o vetor a: ");
+        printf("criar vetor a[%d] = ", i);
         scanf("%d", &a[i]);
     }
 
@@ -22,5 +22,5 @@ int main()
             }
         }
     }
-    return 1;
+    return 0;
 }
