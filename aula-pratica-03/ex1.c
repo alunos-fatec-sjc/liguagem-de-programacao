@@ -16,7 +16,7 @@ int main()
     }
 
     printf("-----Parte B-----\n");
-    int maior = 0;
+    int maior = -32767;
     for(int i = 0; i < index; i++) {
         printf("vetor[%d] = %d\n", i, vetor[i]);
         if(vetor[i] > maior) {
