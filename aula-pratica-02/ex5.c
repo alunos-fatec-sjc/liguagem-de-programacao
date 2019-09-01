@@ -7,7 +7,6 @@ int fatorial(int n)
         return 1;
     else
     return n * fatorial(n - 1);
-
 }
 
 int main()
