@@ -9,10 +9,11 @@ int main()
     }
     int index = 4;
     for(int i = 0; i < 8; i++) {
-        if(index > 7)
+        if(index > 7) {
             index = 0;
+        }
         printf("%d\n", vetor[index]);
         index++;
     }
-    return 1;
+    return 0;
 }
