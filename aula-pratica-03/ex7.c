@@ -10,7 +10,7 @@ int main()
     }
 
     for(int i = 0; i < 8; i++) {
-        printf("Digite um numero para o vetor b: ");
+        printf("criar vetor b[%d] = ", i);
         scanf("%d", &b[i]);
     }
 
