@@ -17,7 +17,7 @@ int main()
     int n, soma = 0, cont = 0;
     scanf("%d", &n);
     for(int i = 2; cont < n; i++){
-        if(primo(i) == 1){
+        if(primo(i)){
             soma += i;
             cont++;
         }
