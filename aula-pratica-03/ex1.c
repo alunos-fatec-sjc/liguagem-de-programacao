@@ -23,6 +23,9 @@ int main()
             maior = vetor[i];
         }
     }
+    if (input <= 0) {
+        return 0;
+    }
     printf("Maior valor encontrado: %d\n", maior);
 
     int media = soma / index;
