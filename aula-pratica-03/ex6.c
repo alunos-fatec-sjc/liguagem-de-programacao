@@ -13,10 +13,10 @@ int main()
 
     for(int i = 0; i < 10; i++) {
         if (x == vetor[i]){
-            printf("O numero foi encontrado na posicao [%d] do vetor", i);
+            printf("O numero foi encontrado na posicao [%d] do vetor\n", i);
             return 1;
         }
     }
-    printf("O numero nao foi encontrado no vetor");
-    return 1;
+    printf("O numero nao foi encontrado no vetor\n");
+    return 0;
 }
