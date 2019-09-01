@@ -1,5 +1,4 @@
 #include<stdio.h>
-int primo(int n);
 
 int primo(int n)
 {
