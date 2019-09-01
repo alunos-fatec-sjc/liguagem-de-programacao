@@ -3,10 +3,7 @@
 
 bool eh_par(int a)
 {
-    if(a % 2 == 0) {
-        return true;
-    }
-    return false;
+    return a % 2 == 0
 }
 
 int main()
