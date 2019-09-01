@@ -6,7 +6,7 @@ int main()
 
     printf("-----Parte A-----\n");
     for(int i = 0; i < 20; i++) {
-        printf("Digite um numero: ");
+        printf("Numero para o vetor[%d]: ", i);
         scanf("%d", &num);
         if(num % 2 == 0) {
             vetor[index] = num;
@@ -19,14 +19,14 @@ int main()
     int maior = 0;
     for(int i = 0; i < index; i++) {
         printf("vetor[%d] = %d\n", i, vetor[i]);
-        if(vetor[i] > maior)
+        if(vetor[i] > maior) {
             maior = vetor[i];
+        }
     }
     printf("Maior valor encontrado: %d\n", maior);
 
     int media = soma / index;
-    printf("Media dos valores: %d", media);
+    printf("Media dos valores: %d\n", media);
 
-    return 1;
-
+    return 0;
 }
