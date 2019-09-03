@@ -1,9 +1,12 @@
-#include<stdio.h>
-#include<stdbool.h>
+/*
+    Escreva uma função que recebe um inteiro positivo n e devolve 1 se n é par e 0 se n é impar.
+*/
 
-bool eh_par(int a)
+#include<stdio.h>
+
+int eh_par(int a)
 {
-    return a % 2 == 0
+    return a % 2 == 0;
 }
 
 int main()
