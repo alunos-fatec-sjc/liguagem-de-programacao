@@ -1,3 +1,12 @@
+/*
+    Durante uma corrida de automóveis com N voltas de duração foram anotados para um piloto, 
+    na ordem, os tempos registrados em cada volta. Fazer um programa em
+    C para ler os tempos das N voltas, calcular e imprimir:
+        a. melhor tempo;
+        b. a volta em que o melhor tempo ocorreu;
+        c. tempo médio das N voltas;
+*/
+
 #include<stdio.h>
 
 int find_menor(int *voltas, int n) {
