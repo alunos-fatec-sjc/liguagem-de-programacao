@@ -1,3 +1,7 @@
+/*
+    Faça uma função que receba, por parâmetro, um valor inteiro e positivo e retorna o número de divisores desse valor.
+*/
+
 #include<stdio.h>
 
 int conta_divisores(int n)
