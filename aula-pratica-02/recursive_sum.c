@@ -1,3 +1,7 @@
+/*
+    Esse exercício faz parte da parte B.
+*/
+
 #include<stdio.h>
 
 int soma(int a)
