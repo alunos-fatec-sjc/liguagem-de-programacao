@@ -1,3 +1,6 @@
+/*
+   Escreva uma função que recebe um inteiro positivo n e devolve 1 se n é primo, 0 em caso contrário.
+*/
 #include<stdio.h>
 
 int primo(int n)
