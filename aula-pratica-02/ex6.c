@@ -1,3 +1,8 @@
+/*
+    Escreva uma função recursiva que receba, por parâmetro, dois valores X e Z e calcula e retorna XZ. 
+    (sem utilizar funções prontas)
+*/
+
 #include<stdio.h>
 
 int exp(int x, int z)
