@@ -1,3 +1,9 @@
+/*
+    Leia um vetor de 10 posições e elimine as posições com valor zero avançando uma posição, 
+    com os valores subsequentes do vetor. 
+    Dessa forma todos “zeros” devem ficar para as posições finais do vetor.
+*/
+
 #include<stdio.h>
 
 int main()
@@ -7,12 +13,7 @@ int main()
     for(int i = 0; i < 10; i++) {
         printf("Digite um numero: ");
         scanf("%d", &num);
-        if(num == 0) {
-            vetor[index_z--] = num;
-        }
-        else {
-            vetor[index++] = num;
-        }
+        vetor[(num == 0) ? index_z-- : index++] = num ;
      }
 
     for(int i  = 0; i < 10; i++) {
