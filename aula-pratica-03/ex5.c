@@ -1,3 +1,8 @@
+/*
+    Leia um vetor de 8 posições e troque os 4 primeiros valores pelos 4 últimos e vice e versa. 
+    Escreva ao final o vetor obtido.
+*/
+
 #include<stdio.h>
 
 int main()
