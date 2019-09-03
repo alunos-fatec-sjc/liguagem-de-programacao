@@ -1,14 +1,16 @@
-#include<stdio.h>
-#include<stdbool.h>
+/*
+    Escreva uma função que leia um inteiro não-negativo n e imprima a soma dos n primeiros números primos.
+*/
 
-bool is_prime(int n)
+#include<stdio.h>
+int is_prime(int n)
 {
     for (int i = 2; i < n; i ++) {
         if (n % i == 0) {
-            return false;
+            return 0;
         }
     }
-    return true;
+    return 1;
 }
 
 int main()
@@ -25,4 +27,3 @@ int main()
     printf("Soma dos %d primeiro números primos: %d\n", n, soma);
     return 0;
 }
-
