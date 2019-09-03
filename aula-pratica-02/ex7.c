@@ -1,3 +1,10 @@
+/*
+    Faça 3 funções:
+    • ler: - uma função que receba dois número inteiro positivo n;
+    • multiplicar: - que multiplique os números recebidos na função ler;
+    • imprimir: - que imprima o resultado da função multiplicar.
+*/
+
 #include<stdio.h>
 
 int ler()
@@ -18,11 +25,11 @@ int mult(int a, int b)
 int imprimir(int a)
 {
     printf("Resultado: %d\n", a);
-    return 1;
+    return 0;
 }
 
 int main()
 {
     ler();
-    return 1;
+    return 0;
 }
