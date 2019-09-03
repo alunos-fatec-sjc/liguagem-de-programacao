@@ -1,3 +1,9 @@
+/*
+    Dado um vetor de 5 posições contendo 0 ou 1(base binária), transformá-lo para a base decimal. 
+    Criar uma função que recebe esse vetor e retorne o número (base decimal).
+    Protótipo da função: int transforma_binario_decimal(int vetor[5])
+*/
+
 #include<stdio.h>
 
 int bin_to_dec(int vetor[5]) {
