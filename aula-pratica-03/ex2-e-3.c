@@ -7,7 +7,7 @@
 #include<stdio.h>
 
 int bin_to_dec(int vetor[5]) {
-    int base = 1, q = 0, result = 0;
+    int base = 1, result = 0;
     for(int index = 5; index >= 0; index--) {
         result += vetor[index] * base;
         base *= 2;
