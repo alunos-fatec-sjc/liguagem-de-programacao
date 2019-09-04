@@ -9,17 +9,13 @@
 int main()
 {
     int vetor[10], num, index_z = 9, index = 0;
-
     for(int i = 0; i < 10; i++) {
         printf("Digite um numero: ");
         scanf("%d", &num);
         vetor[(num == 0) ? index_z-- : index++] = num ;
      }
-
     for(int i  = 0; i < 10; i++) {
         printf("vetor[%d] = %d\n", i, vetor[i]);
     }
-
     return 0;
 }
-
