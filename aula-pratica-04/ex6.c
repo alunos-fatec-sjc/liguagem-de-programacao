@@ -18,9 +18,7 @@ int eh_palindrome(char str[50]) {
     }
 
     for(int i = 0; str[i] != '\0'; i++) {
-        if(str[i] == str_reversa[i]) {
-            continue;
-        } else {
+        if(str[i] != str_reversa[i]) {
             return 0;
         }
     }
@@ -33,7 +31,6 @@ int main()
     printf("Digite uma palavra: ");
     scanf("%s", &str);
 
-    (eh_palindrome(str)) ?
-        printf("A palavra é palíndrome!") : printf("A palavra não é palíndrome!");
+    (eh_palindrome(str)) ? printf("A palavra é palíndrome!") : printf("A palavra não é palíndrome!");
     return 0;
 }
