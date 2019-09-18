@@ -11,7 +11,12 @@ int main()
 
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++) {
-            (j == i) ? matriz[i][i] = 1 : matriz[i][j] = 0;
+           if (j == i) {
+                matriz[i][i] = 1;
+           }
+            else {
+                matriz[i][j] = 0;
+            }
         }
     }
 
