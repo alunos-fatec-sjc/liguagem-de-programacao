@@ -7,13 +7,13 @@
 #include<stdio.h>
 #include<string.h>
 
-void inverter_string(char str[100]) {
+char* inverter_string(char str[100]) {
     int size = strlen(str) - 1;
-    char str_reversa[100];
+    static char str_reversa[100];
     for(int i = size; i >= 0; i--) {
         str_reversa[size - i] = str[i];
     }
-    printf("String invertida: %s\n", str_reversa);
+    return str_reversa;
 
 }
 
@@ -23,6 +23,6 @@ int main()
     printf("Digite uma string: ");
     fgets(str, 100, stdin);
 
-    inverter_string(str);
+    printf("String invertida: %s\n", inverter_string(str));
     return 0;
 }
