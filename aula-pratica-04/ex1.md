@@ -40,7 +40,7 @@ a)  Apresente os dados das matrizes m1 e m2 ao termino da execução da linha 12
 b) Apresente os dados das matrizes m1 e m2 ao termino da execução da linha 20.
 
 |   | M1|   | - |   | M2|   |
-| - | :-: | - | - | - | :-: | - |
+| - |:-:| - | - | - |:-:| - |
 | 0 | 2 | 2 | - | 2 | 1 | 1 |
 | 3 | 0 | 3 | - | 1 | 3 | 1 |
 | 4 | 4 | 0 | - | 1 | 1 | 4 |
