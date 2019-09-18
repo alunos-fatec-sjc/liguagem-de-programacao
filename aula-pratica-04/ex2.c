@@ -11,17 +11,7 @@ int main()
 
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++) {
-           if (j == i) {
-                matriz[i][i] = 1;
-           }
-            else {
-                matriz[i][j] = 0;
-            }
-        }
-    }
-
-    for(int i = 0; i < 5; i++) {
-        for(int j = 0; j < 5; j++) {
+            matriz[i][j] = (j == i) ? 1 : 0;
             printf("%d ", matriz[i][j]);
         }
         printf("\n");
