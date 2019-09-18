@@ -31,6 +31,11 @@ int main()
     printf("Digite uma palavra: ");
     scanf("%s", &str);
 
-    (eh_palindrome(str)) ? printf("A palavra é palíndrome!") : printf("A palavra não é palíndrome!");
+    if(eh_palindrome(str)) {
+        printf("A palavra é palíndrome!");
+    }
+    else {
+        printf("A palavra não é palíndrome!");
+    }
     return 0;
 }
