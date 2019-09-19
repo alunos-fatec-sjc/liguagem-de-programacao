@@ -12,12 +12,10 @@
 
 int eh_palindrome(char str[50]) {
     int size = strlen(str) - 1;
-    char str_reversa[size - 1];
     for(int i = size; i >= 0; i--) {
         if(str[size - i] != str[i]){
             return 0;
         }
-        str_reversa[size - i] = str[i];
     }
     return 1;
 }
