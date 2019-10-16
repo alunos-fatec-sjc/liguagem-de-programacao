@@ -1,4 +1,4 @@
-4. Quais seão as saídas do seguinte programa?
+4. Quais serão as saídas do seguinte programa?
 
 ```c
 #include<stdio.h>
