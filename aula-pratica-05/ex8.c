@@ -6,7 +6,6 @@
 */
 
 #include<stdio.h>
-#include<string.h>
 
 void concatena(char *str_destino, char *str_origem)
 {
