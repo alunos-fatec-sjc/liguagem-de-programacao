@@ -15,7 +15,7 @@ void concatena(char *str_destino, char *str_origem)
     for(j = 0; str_destino[j] != '\0'; ++j, ++i) {
         str_destino[i] = str_origem[j];
     }
-    str_origem[i] = '\0';
+    str_destino[i] = '\0';
 }
 
 int main()
