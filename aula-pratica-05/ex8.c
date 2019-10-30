@@ -10,9 +10,9 @@
 void concatena(char *str_destino, char *str_origem)
 {
     int i, j;
-    for(i = 0; str_origem[i] != '\n'; i++);
+    for(i = 0; str_destino[i] != '\n'; i++);
 
-    for(j = 0; str_destino[j] != '\0'; ++j, ++i) {
+    for(j = 0; str_origem[j] != '\0'; ++j, ++i) {
         str_destino[i] = str_origem[j];
     }
     str_destino[i] = '\0';
@@ -28,6 +28,6 @@ int main()
 
     concatena(str1, str2);
     printf("Concatenação: ");
-    puts(str2);
+    puts(str1);
     return 0;
 }
