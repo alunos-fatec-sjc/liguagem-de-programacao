@@ -7,9 +7,9 @@ q = &j;
 ```
 
 Qual é o valor da variável resultado do tipo int?<br>
-a)resultado = p == &i;<br>
-resultado = 1 (true)<br>
-b)resultado = *p - *q<br>
-resutlado = -2<br>
-c)resultado = (12 + *p) / (*q) + 7;<br>
-resultado = 10<br>
+
+| questão | declaração                       |resultado |
+|---------|----------------------------------|----------|
+| a)      | resultado = p == &i              | 1 (true) |
+| b)      |  resultado = *p - *q             | -2       |
+| c)      | resultado = (12 + *p) / (*q) + 7 | 10       |
