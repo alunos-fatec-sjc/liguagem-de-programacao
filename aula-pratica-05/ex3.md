@@ -6,7 +6,7 @@ p = &i;
 q = &j;
 ```
 
-Qual é o valor da variável resultado do tipo int?<br>
+Qual é o valor da variável resultado do tipo int?
 
 | questão | declaração                       |resultado |
 |---------|----------------------------------|----------|
