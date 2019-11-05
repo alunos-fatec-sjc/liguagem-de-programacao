@@ -1,4 +1,4 @@
-7. Teste o código do exercício 6 sem utilizar ponteiros. Quais são os resultados? Qual a diferença observada com e sem o uso de ponteiros?<br>
+7. Teste o código do exercício 6 sem utilizar ponteiros. Quais são os resultados? Qual a diferença observada com e sem o uso de ponteiros?
 
 Resultado:
 ```
