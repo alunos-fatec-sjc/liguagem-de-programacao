@@ -23,5 +23,5 @@ int troca(int *a, int *b)
 }
 ```
 
-Explicação:<br>
+**Explicação:**
 O código acima está trocando os valores de duas variáveis usando ponteiros armazenando o primeiro valor da primeira variável em uma variável temporária, em seguida atribuindo o valor da segunda variável para a primeira e por último, atribuindo para a segunda variável o valor de temp, que antes era o valor da pra primeira variável.
