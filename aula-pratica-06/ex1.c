@@ -20,7 +20,6 @@
 
 #include<stdio.h>
 #include<string.h>
-void imprimirCarro(struct carro car);
 
 struct carro {
     char marca[15];
@@ -30,6 +29,14 @@ struct carro {
 };
 
 struct carro carros[20];
+
+void imprimirCarro(struct carro car)
+{
+    printf("\nMarca: %s\n", car.marca);
+    printf("Ano: %d\n", car.ano);
+    printf("Cor: %s\n", car.cor);
+    printf("Preço: %.2f\n", car.preco);
+}
 
 void popularVetorCarros() {
     for(int i = 0; i < 20; i++) {
@@ -63,20 +70,12 @@ void printCarrosPorMarca() {
     }
 }
 
-
 void existeCarroCom(char marca[15], int ano, char cor[10]) {
     for(int i = 0; i < 20; i++) {
         if(strcmp(carros[i].marca, marca) == 0 && carros[i].ano == ano && strcmp(carros[i].cor, cor) == 0) {
             printf("Carro encontrado!\nPreço: %.2f\n", carros[i].preco);
         }
     }
-}
-
-void imprimirCarro(struct carro car) {
-    printf("\nMarca: %s\n", car.marca);
-    printf("Ano: %d\n", car.ano);
-    printf("Cor: %s\n", car.cor);
-    printf("Preço: %.2f\n", car.preco);
 }
 
 int main()
@@ -123,6 +122,7 @@ int main()
             }
 
             default:
+				printf("Escolha inválida!\n");
                 break;
 
         }

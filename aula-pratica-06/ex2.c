@@ -20,7 +20,7 @@
         c) Crie o menu de opções para: 
             c1.Devolver a quantidade total de leite produzida por semana na fazenda. 
             c2. Devolver a quantidade total de alimento consumido por semana na fazenda. 
-            c3.Devolver a quantidade total de leite que vai ser produzido por semana na fazenda, após o abate. 
+            c3. Devolver a quantidade total de leite que vai ser produzido por semana na fazenda, após o abate. 
             c4. Devolver a quantidade total de alimento que vai ser consumido por semana na fazenda, após o abate 
             c5. Devolver número de cabeças de gado que iram para o abate. 
             c6. Sair do programa. 
@@ -42,11 +42,11 @@ struct registro {
     char abate[2];
 };
 
-struct registro registros[3];
+struct registro registros[10];
 
 void preencher_registros()
 {
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < 10; i++) {
       printf("Digite o código do gado %d: ", i + 1);
       scanf("%ld", &registros[i].codigo);
       printf("Digite a quantidade de leite do gado %d: ", i + 1);
@@ -63,12 +63,12 @@ void preencher_registros()
 
 void preencher_abate()
 {
-    for (int i = 0; i < 3; i++) {
-      int cond1, cond2, cond3;
+    for (int i = 0; i < 10; i++) {
+      int cond1, cond2, cond10;
       cond1 = 2019 - registros[i].data.ano > 5;
       cond2 = registros[i].leite < 40;
-      cond3 = registros[i].leite > 50 && registros[i].leite < 70 && registros[i].alim > 50;
-      if(cond1 || cond2 || cond3){
+      cond10 = registros[i].leite > 50 && registros[i].leite < 70 && registros[i].alim > 50;
+      if(cond1 || cond2 || cond10){
           strcpy(registros[i].abate, "S");
       } else {
           strcpy(registros[i].abate, "N");
@@ -80,7 +80,7 @@ void preencher_abate()
 int calc_total_leite()
 {
     int total = 0;
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < 10; i++) {
         total += registros[i].leite;
     }
     return total;
@@ -90,7 +90,7 @@ int calc_total_leite()
 float calc_total_alim()
 {
     float total = 0;
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < 10; i++) {
         total += registros[i].alim;
     }
     return total;
@@ -99,10 +99,10 @@ float calc_total_alim()
 int leite_apos_abate()
 {
     int total = 0; 
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < 10; i++) {
         if(strcmp(registros[i].abate, "N") == 0) {
-	    total += registros[i].leite;
-	}
+	        total += registros[i].leite;
+	    }
     }
     return total;
 }
@@ -110,10 +110,10 @@ int leite_apos_abate()
 float alim_apos_abate()
 {
     float total = 0;
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < 10; i++) {
         if(strcmp(registros[i].abate, "N") == 0){
-	   total += registros[i].alim;
-	}
+	        total += registros[i].alim;
+	    }
     }
     return total;
 }
@@ -121,10 +121,10 @@ float alim_apos_abate()
 int num_abates()
 {
     int total = 0;
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < 10; i++){
         if(strcmp(registros[i].abate, "S") == 0) {
-	    total++;
-	}
+	        total++;
+	    }
     }
     return total;
 }
@@ -136,12 +136,12 @@ int main()
     int escolha;
     do
     {
-        printf("\t Selecione uma opção\n");
+    printf("\t Selecione uma opção\n");
 	printf("1 - Quantidade total de leite na semana\n");
 	printf("2 - Quantidade total de alimento na semana\n");
-	printf("3 - Quantidade total de leite após o abate\n");
+	printf("10 - Quantidade total de leite após o abate\n");
 	printf("4 - Quantidade total de alimento após o abate\n");
-        printf("5 - Número de gados que irão para o abate\n");
+    printf("5 - Número de gados que irão para o abate\n");
 	printf("0 - Sair\n");
 	printf("\nOpção: ");
 	scanf("%d", &escolha);
@@ -153,7 +153,7 @@ int main()
 	    case 2:
                 printf("Total de alimento na semana: %.1f\n", calc_total_alim());
 	        break;
-	    case 3:
+	    case 10:
 	        printf("Total de leite após o abate: %d\n", leite_apos_abate());
 	        break;
 	    case 4:
